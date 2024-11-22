@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
         {
             shuffling = true;
             // Load the next scene when the puzzle is solved
-            SceneManager.LoadScene("HallScene"); // Replace "NextScene" with the name of your next scene
+            SceneManager.LoadScene("HallWayScene"); // Replace "NextScene" with the name of your next scene
             return;
         }
 
