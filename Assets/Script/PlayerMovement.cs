@@ -1,0 +1,34 @@
+using UnityEngine;
+
+public class PlayerMovement : MonoBehaviour
+{
+    public float moveSpeed = 5f; // Speed of the player's movement
+    private Rigidbody2D rb;
+    private Vector2 movement;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    void Update()
+    {
+        // Get horizontal input (A/D or Left/Right arrows)
+        float moveInput = Input.GetAxis("Horizontal");
+
+        // Set movement direction
+        movement = new Vector2(moveInput * moveSpeed, rb.velocity.y);
+
+        // Flip the player's sprite based on direction
+        if (moveInput > 0)
+            transform.localScale = new Vector3(1, 1, 1); // Facing right
+        else if (moveInput < 0)
+            transform.localScale = new Vector3(-1, 1, 1); // Facing left
+    }
+
+    void FixedUpdate()
+    {
+        // Move the player
+        rb.velocity = movement;
+    }
+}
