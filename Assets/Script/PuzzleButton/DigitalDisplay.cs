@@ -1,6 +1,7 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DigitalDisplay : MonoBehaviour
@@ -119,9 +120,20 @@ public class DigitalDisplay : MonoBehaviour
 
     private void CheckResults()
     {
-        if (codeSequence == "5051") 
+        if (codeSequence == "5051")
         {
-            Debug.Log("correct!");
+            Debug.Log("Correct!");
+
+            // ย้ายกลับไปยัง Scene ก่อนหน้า
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            if (currentSceneIndex > 0) // ตรวจสอบว่ามี Scene ก่อนหน้า
+            {
+                SceneManager.LoadScene(currentSceneIndex - 1);
+            }
+            else
+            {
+                Debug.LogWarning("No previous scene to load!");
+            }
         }
         else
         {
