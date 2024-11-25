@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/PuzzleScene.unity
     guid: a93e258094de9d44e8637ed32b6cd58b
   - enabled: 1
-    path: Assets/Scenes/BathroomScene.unity
+    path: Assets/Scenes/BathroomGhostScene.unity
     guid: 7c889424df589e14dbf7b737e6fa5cdb
   - enabled: 1
     path: Assets/Scenes/HallWayScene.unity
