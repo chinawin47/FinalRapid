@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HallWayScene.unity
     guid: 95d06f91c14c42a4c877e2efec0488e3
+  - enabled: 1
+    path: Assets/Scenes/BathroomNoGhostScene.unity
+    guid: bbc49c84c416ca34dbb59e5c7580773a
   m_configObjects: {}
