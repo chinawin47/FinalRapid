@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BathroomNoGhostScene.unity
     guid: bbc49c84c416ca34dbb59e5c7580773a
+  - enabled: 1
+    path: Assets/Scenes/BathtubNoGhostScene.unity
+    guid: 337870c3960e46e4eafe7776945ee871
+  - enabled: 1
+    path: Assets/Scenes/BathtubScene.unity
+    guid: 2424b682f7d92c243ae6628ad28b7de0
   m_configObjects: {}
