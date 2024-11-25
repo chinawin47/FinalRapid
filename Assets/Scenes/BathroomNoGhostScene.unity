@@ -469,7 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dea49dfdeb17dec4db015345b867e37d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: BathroomGhostScene
+  sceneName: BathtubNoGhostScene
 --- !u!60 &904572812
 PolygonCollider2D:
   m_ObjectHideFlags: 0
