@@ -118,21 +118,22 @@ public class DigitalDisplay : MonoBehaviour
         }
     }
 
+    public GameObject objectToDelete; // ลาก Object ที่ต้องการลบมาใส่ใน Inspector
+
     private void CheckResults()
     {
         if (codeSequence == "5051")
         {
             Debug.Log("Correct!");
 
-            // ย้ายกลับไปยัง Scene ก่อนหน้า
-            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            if (currentSceneIndex > 0) // ตรวจสอบว่ามี Scene ก่อนหน้า
+            if (objectToDelete != null)
             {
-                SceneManager.LoadScene(currentSceneIndex - 1);
+                Destroy(objectToDelete); // ลบ Object ที่กำหนด
+                Debug.Log("Object has been deleted!");
             }
             else
             {
-                Debug.LogWarning("No previous scene to load!");
+                Debug.LogWarning("Object to delete is not assigned!");
             }
         }
         else
