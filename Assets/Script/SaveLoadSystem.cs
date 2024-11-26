@@ -27,7 +27,7 @@ public class SaveLoadSystem : MonoBehaviour
             string itemName = PlayerPrefs.GetString("Item_" + i, "");
             if (!string.IsNullOrEmpty(itemName))
             {
-                InventoryManager.Instance.AddItem(itemName);
+                InventoryManager.HasKey = true;
             }
         }
         Debug.Log("Inventory Loaded");

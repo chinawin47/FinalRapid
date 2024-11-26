@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class ItemPickup : MonoBehaviour
 {
-    public string itemName; // ชื่อไอเท็มที่เก็บ
+    public string HasKey; // ชื่อไอเท็มที่เก็บ
 
     private void OnMouseDown()
     {
         // เพิ่มไอเท็มเข้า Inventory
-        InventoryManager.Instance.AddItem(itemName);
+        InventoryManager.HasKey = true; // ตั้งค่าสถานะว่ามีกุญแจ
 
         // ลบไอเท็มออกจากฉาก
         Destroy(gameObject);
