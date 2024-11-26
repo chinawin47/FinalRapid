@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;  // Include this for scene management
@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     private int emptyLocation;
     private int size;
     private bool shuffling = false;
+
 
     // Create the game setup with size x size pieces.
     private void CreateGamePieces(float gapThickness)
