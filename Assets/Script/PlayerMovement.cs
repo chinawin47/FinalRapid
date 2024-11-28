@@ -4,11 +4,13 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f; // Speed of the player's movement
     private Rigidbody2D rb;
+    private Animator animator; // Reference to the Animator
     private Vector2 movement;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>(); // Get the Animator component
     }
 
     void Update()
@@ -24,6 +26,9 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector3(1, 1, 1); // Facing right
         else if (moveInput < 0)
             transform.localScale = new Vector3(-1, 1, 1); // Facing left
+
+        // Update the isWalking animation parameter
+        animator.SetBool("isWalking", moveInput != 0);
     }
 
     void FixedUpdate()
