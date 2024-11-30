@@ -1177,6 +1177,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CInematic
       objectReference: {fileID: 0}
+    - target: {fileID: 1888526836563117131, guid: e50bce3d2e05c85438c4a508b585c606, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2072916931907861669, guid: e50bce3d2e05c85438c4a508b585c606, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.7256777
