@@ -14,8 +14,8 @@ public class Door : ItemBase
 
         if (!string.IsNullOrEmpty(targetSceneName) && player != null)
         {
-            // บันทึกตำแหน่ง Player และย้าย Scene
-            player.GetComponent<SavePlayerPosition>().SavePositionAndMoveScene(targetSceneName);
+            SceneManager.LoadScene(targetSceneName);
+
         }
         else
         {
