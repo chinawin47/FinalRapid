@@ -13,7 +13,7 @@ public class DoorInteraction : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerInRange = true;
-            Debug.Log("Press E to open the door.");
+            Debug.Log("Press Q to open the door.");
         }
     }
 
@@ -27,7 +27,7 @@ public class DoorInteraction : MonoBehaviour
 
     private void Update()
     {
-        if (playerInRange && Input.GetKeyDown(KeyCode.E))
+        if (playerInRange && Input.GetKeyDown(KeyCode.Q))
         {
             if (InventoryManager.HasKey) // ตรวจสอบว่าผู้เล่นมีกุญแจหรือไม่
             {
