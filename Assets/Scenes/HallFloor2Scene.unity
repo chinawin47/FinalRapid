@@ -608,6 +608,7 @@ MonoBehaviour:
   interactionMessage: wd
   targetSceneName: BathroomGhostScene
   player: {fileID: 810720553}
+  openDoorSound: {fileID: 8300000, guid: e58f1d816c776464cb391920a2ec754e, type: 3}
 --- !u!114 &101111916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1163,6 +1164,7 @@ MonoBehaviour:
   interactionMessage: wd
   targetSceneName: SleepingRoom
   player: {fileID: 810720553}
+  openDoorSound: {fileID: 8300000, guid: e58f1d816c776464cb391920a2ec754e, type: 3}
 --- !u!114 &173099554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4187,6 +4189,7 @@ MonoBehaviour:
   interactionMessage: wd
   targetSceneName: BathroomScene
   player: {fileID: 810720553}
+  openDoorSound: {fileID: 0}
 --- !u!114 &1167261193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4993,6 +4996,7 @@ MonoBehaviour:
   interactionMessage: wd
   targetSceneName: HallWayScene
   player: {fileID: 810720553}
+  openDoorSound: {fileID: 0}
 --- !u!61 &1366490950
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5326,8 +5330,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: door
   interactionMessage: Opening the door
-  targetSceneName: BathtubScene
+  targetSceneName: 
   player: {fileID: 810720553}
+  openDoorSound: {fileID: 0}
 --- !u!114 &1398393748
 MonoBehaviour:
   m_ObjectHideFlags: 0
