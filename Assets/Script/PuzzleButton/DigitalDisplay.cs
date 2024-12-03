@@ -122,19 +122,13 @@ public class DigitalDisplay : MonoBehaviour
 
     private void CheckResults()
     {
-        if (codeSequence == "5051")
+        if (codeSequence == "6820")
         {
             Debug.Log("Correct!");
 
-            if (objectToDelete != null)
-            {
-                Destroy(objectToDelete); // ลบ Object ที่กำหนด
-                Debug.Log("Object has been deleted!");
-            }
-            else
-            {
-                Debug.LogWarning("Object to delete is not assigned!");
-            }
+            // ย้ายไปยัง Scene ถ้าคำตอบถูกต้อง
+            SceneManager.LoadScene("InDrawerScene"); // เปลี่ยน "NextSceneName" เป็นชื่อ Scene ที่ต้องการโหลด
+
         }
         else
         {
