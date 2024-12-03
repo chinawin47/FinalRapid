@@ -5,11 +5,15 @@ public class ItemCollector : MonoBehaviour
 {
     public int itemCount = 0; // Tracks the collected items
     private MaxItemManager maxItemManager;
+    private AudioSource audioSource; // Reference to the AudioSource component
 
     void Start()
     {
         // Get the MaxItemManager component
         maxItemManager = FindObjectOfType<MaxItemManager>();
+
+        // Get the AudioSource component
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -23,6 +27,12 @@ public class ItemCollector : MonoBehaviour
 
             if (hit.collider != null && hit.collider.CompareTag("Item"))
             {
+                // Play collect sound
+                if (audioSource != null)
+                {
+                    audioSource.Play();
+                }
+
                 // Increase item count
                 itemCount++;
 
