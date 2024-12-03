@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -6,9 +6,12 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator; // Reference to the Animator
     private Vector2 movement;
+    AudioSource audioSource;
+
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>(); // Get the Animator component
     }
@@ -29,6 +32,18 @@ public class PlayerMovement : MonoBehaviour
 
         // Update the isWalking animation parameter
         animator.SetBool("isWalking", moveInput != 0);
+
+        if (moveInput !=0) // ถ้าเดินเสียงจะออก
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            audioSource.Stop();
+        }
     }
 
     void FixedUpdate()
