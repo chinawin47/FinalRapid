@@ -2892,7 +2892,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8382,6 +8382,8 @@ GameObject:
   - component: {fileID: 2057826104}
   - component: {fileID: 2057826103}
   - component: {fileID: 2057826102}
+  - component: {fileID: 2057826106}
+  - component: {fileID: 2057826105}
   m_Layer: 0
   m_Name: Note1
   m_TagString: Untagged
@@ -8503,6 +8505,33 @@ Transform:
   - {fileID: 283724067}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 9.467}
+--- !u!114 &2057826105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057826101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32a19c7ead62ba647a6f3fddaa179333, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemUIPanel: {fileID: 1203246899}
+--- !u!114 &2057826106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057826101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ae0acb46e36b4641977611a3e572e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Press E to Read
+  textUI: {fileID: 709198424}
 --- !u!1 &2090106710
 GameObject:
   m_ObjectHideFlags: 0
