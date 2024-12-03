@@ -276,7 +276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &35488650
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4765,7 +4765,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1167261190
 Transform:
   m_ObjectHideFlags: 0
@@ -5470,7 +5470,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1322034171
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5867,7 +5867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ae0acb46e36b4641977611a3e572e51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Press E to pick
+  message: Press E to Drawer
   textUI: {fileID: 2106703737}
 --- !u!1 &1366490947
 GameObject:
