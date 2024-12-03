@@ -6,6 +6,9 @@ public class GoToAnotherScene : MonoBehaviour
     // Name of the scene to load
     [SerializeField] private string sceneName = "BathroomScene";
 
+    // AudioSource component for playing the sound
+    [SerializeField] private AudioSource clickSound;
+
     void Update()
     {
         // Check for left mouse click
@@ -18,9 +21,14 @@ public class GoToAnotherScene : MonoBehaviour
             // Check if the ray hit this GameObject
             if (hit.collider != null && hit.collider.gameObject == gameObject)
             {
-                // Load the specified scene
+                Debug.Log("Switch clicked");
+                if (clickSound != null)
+                {
+                    clickSound.PlayOneShot(clickSound.clip);
+                }
                 SceneManager.LoadScene(sceneName);
             }
+
         }
     }
 }
