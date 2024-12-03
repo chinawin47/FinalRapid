@@ -435,6 +435,7 @@ MonoBehaviour:
   interactionMessage: F2
   targetSceneName: HallFloor2Scene
   player: {fileID: 3227967388414219971}
+  openDoorSound: {fileID: 8300000, guid: e1e82cb22e7cc4545ba071de2285ad42, type: 3}
 --- !u!114 &594073955
 MonoBehaviour:
   m_ObjectHideFlags: 0
