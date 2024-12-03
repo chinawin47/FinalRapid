@@ -1147,6 +1147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HasKey: 
+  pickupSound: {fileID: 8300000, guid: 54bc828169562be4e9632c16890492cf, type: 3}
 --- !u!60 &1973848412
 PolygonCollider2D:
   m_ObjectHideFlags: 0
