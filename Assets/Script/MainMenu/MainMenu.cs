@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync("HallFloor2Scene");
+        SceneManager.LoadSceneAsync("OpenScene");
     }
 
     public void QuitGame()
