@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1933,6 +1932,8 @@ GameObject:
   m_Component:
   - component: {fileID: 294558616}
   - component: {fileID: 294558615}
+  - component: {fileID: 294558618}
+  - component: {fileID: 294558617}
   m_Layer: 0
   m_Name: Box
   m_TagString: Untagged
@@ -2007,6 +2008,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &294558617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294558614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dea49dfdeb17dec4db015345b867e37d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: InBoxScene
+  clickSound: {fileID: 0}
+--- !u!61 &294558618
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294558614}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -26.764294, y: 4.9340515}
+  m_SpriteTilingProperty:
+    border: {x: 74.33815, y: 3.2299998, z: 20.44499, w: 12.570001}
+    pivot: {x: 0.7675776, y: 0.25329742}
+    oldSize: {x: 100.02442, y: 20}
+    newSize: {x: 100, y: 20.019531}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 100.02442, y: 20}
+  m_EdgeRadius: 0
 --- !u!1 &307642544
 GameObject:
   m_ObjectHideFlags: 0
@@ -9162,19 +9222,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4344955788752233746, guid: 84d2dcdce52c1b54fa770e880a30bdce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.355156
+      value: -4.0779076
       objectReference: {fileID: 0}
     - target: {fileID: 4344955788752233746, guid: 84d2dcdce52c1b54fa770e880a30bdce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.005449906
+      value: -0.009599902
       objectReference: {fileID: 0}
     - target: {fileID: 6579927177950667600, guid: 84d2dcdce52c1b54fa770e880a30bdce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -35.944843
+      value: -33.22209
       objectReference: {fileID: 0}
     - target: {fileID: 6579927177950667600, guid: 84d2dcdce52c1b54fa770e880a30bdce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.118159994
+      value: -0.11401
       objectReference: {fileID: 0}
     - target: {fileID: 6579927177950667600, guid: 84d2dcdce52c1b54fa770e880a30bdce, type: 3}
       propertyPath: m_LocalPosition.z
