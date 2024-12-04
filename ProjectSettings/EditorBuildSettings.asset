@@ -59,4 +59,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TobeContinue.unity
     guid: 87eeb5599e77e834a98142ba83cee6e3
+  - enabled: 1
+    path: Assets/Scenes/Credit.unity
+    guid: a5b05d9041101894bb49aab347a67952
   m_configObjects: {}
