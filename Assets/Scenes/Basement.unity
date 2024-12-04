@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -171,6 +170,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4952406882494862440, guid: 7afd6f5d692c13e41afe4a7fe460b6df, type: 3}
+      propertyPath: nextSceneName
+      value: TobeContinue
+      objectReference: {fileID: 0}
     - target: {fileID: 6666133034278576556, guid: 7afd6f5d692c13e41afe4a7fe460b6df, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -278,7 +281,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c1c58b1797d8c44db7aca751217ccce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemCount: 1
 --- !u!61 &52431933
 BoxCollider2D:
   m_ObjectHideFlags: 0

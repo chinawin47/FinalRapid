@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class ItemCollector : MonoBehaviour
 {
-    public int itemCount = 0; // Tracks the collected items
+    public static int itemCount = 0; // Make itemCount static to track it globally
     private MaxItemManager maxItemManager;
     private AudioSource audioSource; // Reference to the AudioSource component
 
